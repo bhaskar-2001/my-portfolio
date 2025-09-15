@@ -1,6 +1,6 @@
 # Static Website Portfolio — GitHub Pages - Task-6
 
-**Live Demo:** [Click Here]((https://bhaskar-2001.github.io/my-portfolio/))
+**Live Demo:** [Click Here](https://bhaskar-2001.github.io/my-portfolio/)
 
 ## - Project Overview
 
