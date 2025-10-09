@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhaskar Kushwah | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dark/Light Toggle -->
+  <button class="toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#resume">Resume</a>    
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero -->
+<!-- Home / Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">
+      Hi, I'm <span class="accent">Bhaskar Kushwah!</span>
+    </h1>
+
+    <h2 class="hero-subtitle">
+      <span id="typing"></span>
+    </h2>
+
+    <p class="hero-desc">
+      I build scalable cloud solutions, automate deployments, and bridge the gap between
+      development and operations. Passionate about modern DevOps culture, cloud-native tools, and learning by doing.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a>
+      <a href="resume.pdf" class="btn-secondary" target="_blank"><i class="fas fa-file-alt"></i> View Resume</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="assets/devops-2.png" alt="DevOps Illustration" />
+  </div>
+
+  <!-- Animated background lines -->
+  <div class="glow-lines">
+    <span></span><span></span><span></span><span></span>
+  </div>
+</section>
+
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fab fa-aws"></i><span>AWS</span></div>
+      <div class="skill-card"><i class="fas fa-cloud"></i><span>Azure</span></div>
+      <div class="skill-card"><i class="fas fa-server"></i><span>GCP</span></div>
+      <div class="skill-card"><i class="fab fa-linux"></i><span>Linux</span></div>
+      <div class="skill-card"><i class="fab fa-docker"></i><span>Docker</span></div>
+      <div class="skill-card"><i class="fas fa-network-wired"></i><span>Kubernetes</span></div>
+      <div class="skill-card"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
+      <div class="skill-card"><i class="fas fa-code-branch"></i><span>Jenkins</span></div>
+      <div class="skill-card"><i class="fas fa-cogs"></i><span>Terraform</span></div>
+      <div class="skill-card"><i class="fas fa-sync-alt"></i><span>CI/CD</span></div>
+      <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+      <div class="skill-card"><i class="fas fa-terminal"></i><span>Shell Scripting</span></div>
+      <div class="skill-card"><i class="fa-solid fa-chart-line"></i><span>Prometheus</span></div>
+      <div class="skill-card"><i class="fa-solid fa-chart-pie"></i><span>Grafana</span></div>  
+      <div class="skill-card"><i class="fa-brands fa-jira"></i><span>JIRA</span></div> 
+      <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+      <div class="skill-card"><i class="fa-brands fa-css3"></i><span>CSS</span></div>
+      <div class="skill-card"><i class="fa-brands fa-square-js"></i><span>JavaScript</span></div>                                 
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="gallery">
+    <h2>Certificates</h2>
+    <div class="grid">
+      <!-- Example Certificate Cards -->
+      <div class="card" onclick="openModal('img/cert1.jpg')">
+        <img src="img/cert1.jpg" alt="Certificate 1">
+        <h3>DevOps Internship</h3>
+        <p>Issued by Elevate Labs</p>
+      </div>
+
+      <div class="card" onclick="openModal('img/cert2.jpg')">
+        <img src="img/cert2.jpg" alt="Certificate 2">
+        <h3>Amazon Web Service Essentials</h3>
+        <p>Issued by AWS Skillbuilder</p>
+      </div>
+
+      <div class="card" onclick="openModal('img/cert3.jpg')">
+        <img src="img/cert3.jpg" alt="Certificate 3">
+        <h3>Python, MySql, mongoDB & Data Analysis</h3>
+        <p>Issued by www.eduxgain.com</p>
+      </div>
+
+      <div class="card" onclick="openModal('img/cert4.jpg')">
+        <img src="img/cert4.jpg" alt="Certificate 4">
+        <h3>Job Oriented Value-Added Course</h3>
+        <p>Issued by GLA University</p>
+      </div>      
+    </div>
+  </section>
+
+  <!-- Documents Section -->
+  <section id="resume" class="gallery">
+    <h2>Resume</h2>
+    <div class="grid">
+      <div class="card">
+        <iframe src="docs/resume.pdf" title="Resume"></iframe>
+        <h3>Resume</h3>
+        <a href="docs/resume.pdf" target="_blank" class="btn">View PDF</a>
+      </div>
+  </section>
+
+  <!-- Modal for Image Preview -->
+  <div id="imgModal" class="modal" onclick="closeModal()">
+    <img id="modalImg" src="" alt="Certificate preview">
+  </div>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Full Stack CI/CD Pipeline</h3>
+      <p>
+        Built and containerized a full-stack app, automated deployments using GitHub Actions,
+        hosted on AWS EC2, and published images to DockerHub. This project demonstrates how to build and deploy a Node.js application using a CI/CD pipeline
+      </p>
+      <a href="https://github.com/bhaskar-2001/CICD-play" target="_blank" class="project-btn">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Self-Healing Infrastructure</h3>
+      <p>
+        Self-healing infrastructure demo using Prometheus, Alertmanager, Ansible, and Flask.
+        Automatically detect service failures (like Nginx down or CPU > 90%) and auto-recover using Prometheus alerts, Alertmanager, a custom webhook, and Ansible playbooks.
+      </p>
+      <a href="https://github.com/bhaskar-2001/self-healing-infra" target="_blank" class="project-btn">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Complete Observability Stack (Metrics, Logs & Traces)</h3>
+      <p>
+        Set up a complete observability stack using Prometheus, Grafana, Loki, and Tempo to monitor a sample Flask application.
+        Collect and visualize metrics, logs, and traces in a single Grafana dashboard for comprehensive application monitoring.
+      </p>
+      <a href="https://github.com/bhaskar-2001/devops-observability-demo" target="_blank" class="project-btn">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>GitOps with Argo CD — Project</h3>
+      <p>
+        Implemented GitOps using Argo CD to manage Kubernetes deployments.
+        Automated application deployment and synchronization from a Git repository to a Kubernetes cluster, ensuring consistent and reliable updates. 
+      </p>
+      <a href="https://github.com/bhaskar-2001/Gitops-ArgoCD" target="_blank" class="project-btn">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Kubernetes Canary Deployment with K3s + Istio</h3>
+      <p>
+        Set up a local Kubernetes cluster using K3s and Istio to demonstrate canary deployments.
+        Deployed a sample application and configured Istio to route a small percentage of traffic to the new version, allowing for safe testing before full rollout.
+      </p>
+      <a href="https://github.com/bhaskar-2001/k3s-istio-canary-deployment" target="_blank" class="project-btn">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Version-Controlled Project</h3>
+      <p>
+        A project demonstrating best practices in version control using Git and GitHub.
+        Includes branching strategies, commit conventions, and collaboration workflows to manage code changes effectively. 
+      </p>
+      <a href="https://github.com/bhaskar-2001/Version-control-project" target="_blank" class="project-btn">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+
+  </div>
+</section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div>
+        <h3>Master’s in Computer Applications (2023-2025)</h3>
+        <p>GLA University, Mathura</p>
+      </div>
+      <div>
+        <h3>B.Sc. in Mathematics (2019-2022)</h3>
+        <p>MAHGU, Uttarakhand</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+
+    <div class="contact-card">
+      <i class="fas fa-envelope contact-icon"></i>
+      <p>
+        <a href="mailto:bhaskarkushwah32@gmail.com">bhaskarkushwah32@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="contact-card">
+      <i class="fab fa-linkedin contact-icon"></i>
+      <p>
+        <a href="https://www.linkedin.com/in/bhaskar-kushwah/" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+
+    <div class="contact-card">
+      <i class="fab fa-github contact-icon"></i>
+      <p>
+        <a href="https://github.com/bhaskar-2001" target="_blank">GitHub</a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
